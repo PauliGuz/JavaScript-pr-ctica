@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <form class="formulario">
+      <h1>Escríbenos!!!</h1>
+      <div id="exitoMensaje" style="display: none">
+        <h2 class="exito">mensaje enviado con éxito</h2>
+      </div>
+      <label for="nombre">Nombre completo</label>
+     <br /> 
+      <input type="text" id="nombre" name="nombre" /><br />
+      <p id="errorNombre" style="display: none">El nombre es requerido</p>
+      <br />
+      <label for="asunto">Asunto</label><br />
+    
+      <input type="text" id="asunto" name="asunto" /><br />
+      <p id="errorAsunto" style="display: none">El asunto es requerido</p>
+      <br />
+      <label for="mensaje">Mensaje</label>
+      <br />
+      <textarea type="text" id="mensaje" name="mensaje"> </textarea><br />
+      <p id="errorMensaje" style="display: none">El mensaje es requerido</p>
+      <br />
+      <input id="btnEnviar" type="submit" value="Enviar Mensaje" /><br />
+    </form>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
